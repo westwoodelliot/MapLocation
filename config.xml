@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.helloworld"
+        version   = "1.0.0">
+
+    <name>Location Test</name>
+
+    <description>
+        A sample application that retrieves location data.
+    </description>
+
+    <author href="worcester.ac.uk" email="wese1_1@uni.worc.ac.uk">
+        WBS Computing
+    </author>
+	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+    <preference name="permissions"                value="none"/>   
+	
+	<access origin="*"/>
+</widget>
