@@ -1,5 +1,5 @@
 //when the jQuery Mobile page is initialised
-$(document).on('pageinit', function() {
+/*$(document).on('pagecreate', function() {
 	
 	//set up listener for button click
 	//$(document).ready(getPosition);
@@ -92,7 +92,7 @@ function failPosition(error) {
 	$('#time').val("Error getting data: " + error);
 	
 }
-
+*/
 $( document ).on( "pagecreate", "#map-page", function() {
     var defaultLatLng = new google.maps.LatLng(52.19812, -2.24185);
     if ( navigator.geolocation ) {
