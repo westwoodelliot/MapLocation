@@ -1,0 +1,4 @@
+nearby - load routes
+create - show drawing
+edit - show drawing and load making editable
+saved - tie routes to person and load them
