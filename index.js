@@ -59,7 +59,25 @@ function loadMap(position)
       var marker = new google.maps.Marker({
 		position: myLatlng,
 		map: map,
-		title:"Hello World!"})
+		title:"Your Position!"});
+		
+		 var drawingManager = new google.maps.drawing.DrawingManager({
+    drawingMode: google.maps.drawing.OverlayType.MARKER,
+    drawingControl: true,
+    drawingControlOptions: {
+      position: google.maps.ControlPosition.TOP_CENTER,
+      drawingModes: [
+        google.maps.drawing.OverlayType.MARKER,
+        google.maps.drawing.OverlayType.POLYLINE
+      ]
+    },
+    markerOptions: {
+      icon: 'images/filled_flag.png'
+    },
+    
+  });
+    drawingManager.setMap(map);
+
 		
       google.maps.event.addDomListener(window, 'load', initialize);
 }
