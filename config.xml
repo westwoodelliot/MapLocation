@@ -6,7 +6,7 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>Hiking map test</name>
+    <name>Hiking application</name>
 
     <description>
         A simple hiking and trail finding application.
