@@ -59,6 +59,7 @@ function loadMap(position)
       var marker = new google.maps.Marker({
 		position: myLatlng,
 		map: map,
+		draggable: true,
 		title:"Your Position!"});
 		
 		 var drawingManager = new google.maps.drawing.DrawingManager({
@@ -72,14 +73,18 @@ function loadMap(position)
       ]
     },
     markerOptions: {
-      icon: 'images/filled_flag.png'
+      icon: 'images/filled_flag.png',
+	  draggable: true,
     },
     
   });
     drawingManager.setMap(map);
+	loadRoutes(map);
 
 		
       google.maps.event.addDomListener(window, 'load', initialize);
+	  
+	  
 }
 //called if the position is not obtained correctly
 function failPosition(error) {
