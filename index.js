@@ -46,6 +46,7 @@ $( document ).on( "pageinit", "#map-page", function() {
 		strokeWeight: 3
 	}
   });
+  	google.maps.event.trigger(map, 'resize');
   drawingManager.setMap(map);
  
 		
